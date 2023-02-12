@@ -26,7 +26,7 @@ Route::group(['middleware' => ['decoder', 'RemoteAuth']], function () {
     Route::get('business/show/{tableId}', [BusinessController::class, 'show'])->name('show');
     Route::get('business/search', [BusinessController::class, 'search'])->name('search');
 });
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
